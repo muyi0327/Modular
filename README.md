@@ -7,7 +7,7 @@ Modular.js 我的模块管理器。没有显式声明依赖关系时，遵循CMD
 
 ###二、兼容性
 目前，兼容所有主浏览器：
-  Chrome
+  Chrome<br/>
   Firfox
   Opera
   Safari
