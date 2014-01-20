@@ -1,5 +1,5 @@
 (function (Win) {
-    var Rquire = {},
+    var Modular = {},
         head = document.getElementsByTagName('head')[0],
         scripts = head.getElementsByTagName('script'),
         mainModule = scripts[scripts.length-1],
@@ -296,7 +296,7 @@
      * @param mIds
      * @param callback
      */
-    Rquire.use = function (mIds, callback) {
+    Modular.use = function (mIds, callback) {
         var events = new Events;
         if (isStr(mIds)) {
             mIds = [formatId(mIds)];
@@ -330,7 +330,7 @@
         });
     }
 
-    Rquire.config = function(config){
+    Modular.config = function(config){
         if (!config || !isObj(config)){
             return;
         }
@@ -500,9 +500,9 @@
     if (mainModule){
         var msrc = mainModule.dataset && mainModule.dataset.main
             || mainModule.getAttribute('data-main');
-        Rquire.use(msrc);
+        Modular.use(msrc);
     }
     Win.define = define;
     Win.require = require;
-    Win.Rquire = Rquire;
+    Win.Modular = Modular;
 })(window);
