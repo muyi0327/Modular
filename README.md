@@ -12,3 +12,7 @@ Modular.js 我的模块管理器。没有显式声明依赖关系时，遵循CMD
   Opera<br/>
   Safari<br/>
   IE6+<br/>
+
+###模块入口
+支持两种入口：
+1、Modular.use()
