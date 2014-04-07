@@ -1,3 +1,7 @@
+/**
+*模块管理工具
+*name Mosular.js
+*/
 (function (Win) {
     var Modular = {},
         head = document.getElementsByTagName('head')[0],
